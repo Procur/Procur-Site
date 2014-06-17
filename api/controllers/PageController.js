@@ -7,6 +7,9 @@
 
 module.exports = {
 
+  index: function(req, res){
+    res.view();
+  },
   aboutUs: function(req, res){
     res.view();
   },
