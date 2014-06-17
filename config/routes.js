@@ -22,21 +22,16 @@
 
 module.exports.routes = {
 
-
-  // Make the view located at `views/homepage.ejs` (or `views/homepage.jade`, etc. depending on your
-  // default view engine) your home page.
-  //
-  // (Alternatively, remove this and add an `index.html` file in your `assets` directory)
-  '/': {
-    view: 'homepage'
-  },
-
-
-  // Custom routes here...
-
-
-  // If a request to a URL doesn't match any of the custom routes above,
-  // it is matched against Sails route blueprints.  See `config/blueprints.js`
-  // for configuration options and examples.
+  'get /': 'PageController.index',
+  'get /about': 'PageController.aboutUs',
+  'get /careers': 'PageController.careers',
+  'get /contact': 'PageController.contact',
+  'get /faq': 'PageController.faq',
+  'get /features': 'PageController.features',
+  'get /pricing': 'PageController.pricing',
+  'get /privacy': 'PageController.privacy',
+  'get /support': 'PageController.support',
+  'get /termsofservice': 'PageController.termsOfService',
+  'get /termsofuse': 'PageController.termsOfUse'
 
 };
